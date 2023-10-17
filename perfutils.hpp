@@ -1,7 +1,9 @@
 #pragma once
 
 #include <map>
+#if !defined(_WIN32)
 #include <sys/time.h>
+#endif
 #include <iostream>
 #include <algorithm>
 #include <vector>

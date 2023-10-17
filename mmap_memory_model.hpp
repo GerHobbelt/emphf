@@ -6,8 +6,10 @@
 #include <memory>
 #include <stddef.h>
 #include <stdlib.h>
+#if !defined(_WIN32)
 #include <sys/mman.h>
 #include <unistd.h>
+#endif
 
 #include "internal_memory_model.hpp"
 
